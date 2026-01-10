@@ -1,0 +1,188 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* HEADER SECTION */
+header {
+    background-color: #006491; /* Primary Domino's Blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 10%;
+    border-bottom: 4px solid #00557a;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-box {
+    background-color: #00557a; /* Domino's Red */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-home {
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nav-home:hover {
+    background-color: #e31837; /* red style */
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sign-in, .cart {
+    background-color: #00557a;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.cart {
+    border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+/* MAIN CONTENT SECTION */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: left; /* Align all content to left */
+    background-color: white;
+    min-height: 500px;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.selector-title {
+    background-color: #006491; 
+    color: white;
+    padding: 15px;            
+    font-weight: bold;
+    display: block;           
+    width: 100%;              
+    box-sizing: border-box;   
+    
+    margin: 0;               
+    text-align: left;         
+}
+
+.order-selector {
+    border: 1px solid #e0e0e0;
+    padding: 0;               
+    overflow: hidden;        
+}
+
+.options-container {
+    padding: 20px;           
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.option-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* align items to left */
+    transition: transform 0.2s;
+}
+
+.option-item:hover {
+    transform: scale(1.05);
+}
+
+.icon-img {
+    width: 55px; /* optional: adjust size */
+    margin-bottom: 5px;
+}
+
+.option-item p {
+    font-weight: bold;
+    font-size: 12px;
+    color: #006491;
+}
+
+.divider {
+    font-weight: bold;
+    color: #555;
+    font-size: 12px;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: #e1e1e1;
+    padding: 35px 10%;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.footer-links span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.coke-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+}
+
+.footer-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-text p {
+    margin-bottom: 15px;
+}
+
+.guarantee {
+    font-weight: bold;
+    margin-top: 20px;
+}

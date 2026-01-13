@@ -67,6 +67,9 @@ body {
   font-size: 30px;
   margin-right: 10px;
 }
+.menu {
+  background-color: rgb(5, 5, 110);
+}
 .nav_div:hover {
   background-color: darkblue;
 }
@@ -117,83 +120,133 @@ body {
   font-weight: bold;
   margin: 0;
 }
-/* =====               BODY CONTENT  +++++++++++++++============= */
-
-.body_content {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 50px;
+.menu-container {
   padding: 0 15%;
-  display: flex;
-  flex-direction: column;
+  margin-top: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.body_content .category {
+/* START ORDER BAR */
+.start-order {
+  background-color: #006491;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-between;
 }
 
-.body_content .category hr {
-  width: 10%;
-  height: 2px;
-  background-color: #1d1599;
-  border: none;
+.start-order h2 {
+  font-size: 38px;
+  margin: 0;
 }
 
-.body_content .category p {
-  font-size: 44px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  color: #1d1599;
+.order-buttons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
-.body_content .button button {
-  background-color: #c81316;
-  color: white;
-  border: none;
-  padding: 30px 76px;
-  margin: 0px 40px;
+.order-buttons span {
   font-size: 30px;
-  border-radius: 5px;
-}
-.button button::after {
-  font-size: 16px;
   font-weight: bold;
 }
 
-.body_content .button button:hover {
-  background-color: darkred;
+.btn {
+  border: none;
+  padding: 40px 100px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.content_slide {
+.delivery {
+  background-color: #e31837;
+  font-size: 40px;
+}
+
+.carryout {
+  background-color: #e31837;
+  font-size: 40px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* MENU HEADER */
+.menu-title {
+  margin-top: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+.menu-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-desc a {
+  color: #006491;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.print-btn {
+  margin: 20px 0;
+  background-color: #006491;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MENU LIST */
+.menu-list {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.menu-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  gap: 20px;
+  margin-top: 50px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
 }
-.small_slide {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  width: 31%;
-  height: auto;
-  object-fit: cover;
-  justify-content: space-between;
+
+.menu-item img {
+  width: 10%;
 }
-.small_slide > :first-child {
-  margin-bottom: 23px;
+
+.menu-item span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #006491;
 }
-.content_slide > img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+
+/* ACTIVE ITEM */
+.menu-item:hover {
+  background-color: #006491;
 }
-.pizza_set {
-  margin-top: 20px;
+.menu-item span:hover {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f8fdff;
 }
+
+.menu-item.active span {
+  color: white;
+}
+
+/* Floor  */
 
 .footer {
   background-color: #f6f6f7;
@@ -262,97 +315,4 @@ body {
   max-width: 1000px;
   text-align: left;
   margin-bottom: 15px;
-}
-
-/* ===== LOGIN MODAL ===== */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: white;
-  width: 40%;
-  padding: 30px;
-  height: auto;
-  border-radius: 5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-}
-
-.modal-content h2 {
-  font-size: 46px;
-  margin-bottom: 10px;
-}
-
-.modal-content label {
-  font-weight: bold;
-  margin-top: 15px;
-  display: block;
-}
-
-.modal-content input {
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-}
-
-.create {
-  font-size: 14px;
-}
-
-.create a {
-  color: #0078ae;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.forgot {
-  color: red;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.btn {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  margin-bottom: 10px;
-  color: white;
-  cursor: pointer;
-}
-
-.btn.blue {
-  background-color: #0078ae;
-}
-
-.btn.red {
-  background-color: #c81316;
-}
-
-.secure {
-  font-size: 13px;
-  color: #666;
-  margin-top: 10px;
-}
-
-.close {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-size: 28px;
-  cursor: pointer;
 }

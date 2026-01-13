@@ -1,73 +1,109 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Domino's Pizza Cambodia - Order</title>
-    <link rel="stylesheet" href="./css/styleorder.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/styleorder.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-left">
-            <div class="logo-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Domino%27s_pizza_logo.svg" width="40" alt="Logo">
-            </div>
-            <div class="nav-home" onclick="window.history.back();">
-                HOME
-            </div>
+      <div class="header-left">
+        <div class="logo-box">
+          <img src="./image/logo.png" alt="Logo" />
         </div>
-        <div class="header-right">
-            <div class="sign-in">
-                <img src="image/sign in.png" width="40" alt="Sign In">
-            </div>
-            <div class="cart">
-                <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" width="50" alt="Cart">
-            </div>
+        <div class="nav-home"><a href="index.html">HOME</a></div>
+      </div>
+      <div class="header-right">
+        <div class="sign-in">
+          <img src="image/sign in.png" width="40" alt="Sign In" />
         </div>
+        <div class="cart">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+            width="50"
+            alt="Cart"
+          />
+        </div>
+      </div>
     </header>
 
     <div class="container">
-        <h1>SELECT YOUR LOCAL STORE</h1>
+      <h1>SELECT YOUR LOCAL STORE</h1>
 
-        <div class="order-selector">
-            <div class="selector-title">IS THIS ORDER FOR DELIVERY OR CARRYOUT?</div>
-            <div class="options-container">
-                <div class="option-item">
-                    <img src="image/delivery.png" width="55" class="icon-img" alt="Delivery">
-                    <p>DELIVERY</p>
-                </div>
-                
-                <div class="divider">- OR -</div>
-
-                <div class="option-item">
-                    <img src="image/carryout.png" width="50" class="icon-img" alt="Carryout">
-                    <p>CARRYOUT</p>
-                </div>
-            </div>
+      <div class="order-selector">
+        <div class="selector-title">
+          IS THIS ORDER FOR DELIVERY OR CARRYOUT?
         </div>
+        <div class="options-container">
+          <div class="option-item">
+            <img
+              src="image/delivery.png"
+              width="55"
+              class="icon-img"
+              alt="Delivery"
+            />
+            <p>DELIVERY</p>
+          </div>
+
+          <div class="divider">- OR -</div>
+
+          <div class="option-item">
+            <img
+              src="image/carryout.png"
+              width="50"
+              class="icon-img"
+              alt="Carryout"
+            />
+            <p>CARRYOUT</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer>
-        <div class="footer-links">
-            <span>International</span> | 
-            <span>Contact Us</span> | 
-            <span>Privacy Policy</span> | 
-            <span>Terms and Condition</span> | 
-            <span>Domino's Express</span> | 
-            <span>Hotline: 1800202020</span>
+    <footer class="footer">
+      <div class="footer_container">
+        <!-- Footer links -->
+        <ul class="footer_list">
+          <li><a href="#">International</a></li>
+          <hr />
+          <li><a href="#">Contact Us</a></li>
+          <hr />
+          <li><a href="#">Privacy Policy</a></li>
+          <hr />
+          <li><a href="#">Terms & Conditions</a></li>
+          <hr />
+          <li><a href="#">Domino's Express</a></li>
+          <hr />
+          <li class="hotline">Hotline: 1800202020</li>
+        </ul>
+
+        <!-- Social icons -->
+        <div class="footer_social">
+          <img src="image/facebook-logo.png" alt="Facebook" />
+          <img src="image/cocacola.png" alt="Coca Cola" />
         </div>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" class="coke-logo" alt="Coca Cola">
+        <!-- Footer text -->
+        <p class="footer_copy">
+          Any Delivery Charge is not a tip paid to your driver. Please reward
+          your driver for awesomeness. Our drivers carry less than $10. Minimum
+          purchase required for delivery and for mode of payment is strictly
+          Cash On Delivery. The 30-minute Delivery Commitment starts from the
+          time of completion of call. Our Operating hours: 10:00 AM - 10:00 PM
+          and Delivery service start from 10:00 AM - 9:30 PM.
+        </p>
 
-        <div class="footer-text">
-            <p>Any Delivery Charge is not a tip paid to your driver. Please reward your driver for awesomeness. Our drivers carry less than 10$. Minimum purchase required for delivery and for mode of payment is strictly Cash On Delivery. The 30-minute Delivery Commitment starts from the time of completion of call. Our Operating hours: 10:00 AM - 10:00 PM and Delivery service start from 10:00 AM - 9:30 PM.</p>
-            
-            <p>Domino's Pizza Cambodia reserves the right to modify or supplement this policy at any time. If a material change to the terms of this policy is made, Domino's will post a notice on its homepage and a link to the new policy.</p>
+        <p class="footer_copy">
+          Domino's Pizza Cambodia reserves the right to modify or supplement
+          this policy at any time.
+        </p>
 
-            <p class="guarantee">Our Guarantee: If you are not completely satisfied with your Domino's Pizza experience, we will make it right or refund your money.</p>
-        </div>
+        <p class="footer_copy">
+          Our Guarantee: If you are not completely satisfied with your Domino's
+          Pizza experience, we will make it right or refund your money.
+        </p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

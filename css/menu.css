@@ -236,10 +236,9 @@ body {
 .menu-item:hover {
   background-color: #006491;
 }
-.menu-item span:hover {
-  font-size: 22px;
-  font-weight: bold;
+.menu-item:hover span {
   color: #f8fdff;
+  font-weight: bold;
 }
 
 .menu-item.active span {
